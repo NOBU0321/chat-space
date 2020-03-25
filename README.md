@@ -7,12 +7,12 @@
 ## Association
 - has_many :groups
 - has_many :messages
-- has_many :users_groups
+- has_many :users_groups, through: users_groups
 
 ## messagesテーブル
 |Column|Type|Options|
 |------|----|-------|
-|text|text|null: false|
+|text|text|
 |image|string|
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
