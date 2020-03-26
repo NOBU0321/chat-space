@@ -5,9 +5,9 @@
 |password|string|null: false|
 |name|string|null: false|
 ## Association
-- has_many :groups
+- has_many :groups, through: users_groups
 - has_many :messages
-- has_many :users_groups, through: users_groups
+- has_many :users_groups
 
 ## messagesテーブル
 |Column|Type|Options|
