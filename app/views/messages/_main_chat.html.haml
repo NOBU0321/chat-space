@@ -1,0 +1,40 @@
+.chat-main
+  .main-header
+    .main-header__left-box
+      %p.main-header__current-group
+        MEIN
+      %p.main-header__member-list
+        Member:
+    .main-header__edit-btn
+      = link_to "###" do
+        Edit
+
+  .messages
+    .message-box
+      .message-box__upper-info
+        %p.message-box__upper-info__person
+          NOBU
+        %p.message-box__upper-info__date
+          2020/03/21 11:41
+      %p.messag-box__message-text
+        Hello
+      
+    .message-box
+      .message-box__upper-info
+        %p.message-box__upper-info__person
+          YOSHI
+        %p.message-box__upper-info__date
+          2020/03/21 03:30
+      %p.messag-box__message-text
+      Hello
+
+  .form
+    %form__new-message
+      .input-box
+        %input{type: "text", class: "input-box__text", placeholder: "type a message"}
+        %label{class: "input-box__image"}
+          =icon('fas', 'image')
+          %input{type: "file", class: "input-box__image__file"}
+    %form__send-btn
+      .send-btn
+        %input{type: "submit", value: "send", class: "send-btn__submit"}

@@ -1,0 +1,30 @@
+.chat-side
+  .side-header
+    .side-header__box
+      %ul.side-header__box__username
+        NOBU
+      %ul.side-header__box__menu
+        %li.side-header__box__menu__new-group
+          = link_to "#" do
+            =icon('fas', 'edit')
+        %li.side-header__box__menu__edit-user
+          = link_to "##" do
+            =icon('fas', 'cog')
+
+  .groups
+    .group
+      %p.group__group-name
+        TEAM 1
+      %p.group__latest-message
+        NO MESSAGE
+    .group
+      %p.group__group-name
+        TEAM 2
+      %p.group__latest-message
+        NO MESSAGE
+
+
+
+
+
+
