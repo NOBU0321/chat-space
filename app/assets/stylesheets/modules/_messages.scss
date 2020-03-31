@@ -51,8 +51,9 @@
     .group {
       height: 45px;
       margin-bottom: 40px;
-      color: #ffffff;
-      &__name {
+      a{color: #ffffff;
+      }
+      &__group-name {
         font-size: 15px;
       }
       &__latest-message {
@@ -138,40 +139,38 @@
     height: 90px;
     background-color: #d2d2d2;
     padding: 20px 40px;
-    display: flex;
 
-
+    .new_message {
+      display: flex;
+    
       .input-box {
-        position: relative;
-        &__text {
-          height: 50px;
-          width: 75vw;
-          padding: 0 40px 0 10px;
-          
-        }
-        &__image {
-          position: absolute;
-          top: 11px;
-          right: 20px;
-          font-size: 20px;
-          
-        &__file {
-          display: none;
-          }
-        }
-      }
-
-      .send-btn {
         width: 100%;
-        height:50px;
-        padding: 0 20px;
         position: relative;
-        &__submit {
+        .input-box__text {
           height: 50px;
-          width: 95px;
-          background-color: #38aef0;
-          color: white;
+          width: 100%;
+          padding: 0 40px 0 10px;
+        }
+        .input-box__image {
+        position: absolute;
+        top: 11px;
+        right: 20px;
+        font-size: 20px;
+          .hidden {
+          display: none;
         }
       }
+    }
+  
+    .form__submit {
+      padding: 0 30px;
+      margin-left: 15px;
+      position: relative;
+      height: 50px;
+      width: 95px;
+      background-color: #38aef0;
+      color: white;
+      }
+    }
   }
 }
