@@ -107,13 +107,14 @@
   }
 
   .messages {
+    overflow: scroll;
     height: calc(100% - 190px);
     width: calc(100vw - 300px);
     background-color: #fafafa;
     padding: 35px 40px;
     .message-box {
       padding-bottom: 40px;
-      &__upper-info {
+      .message-box__upper-info {
         display: flex;
         padding-bottom: 10px;
         &__person {
