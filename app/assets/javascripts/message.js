@@ -19,7 +19,8 @@ $(function(){
         <img src=${message.image} >
       </div>`
       return html;
-    } else {
+    } 
+    else {
       var html =
       `<div class="message-box">
         <div class="message-box__upper-info">
