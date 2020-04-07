@@ -54,6 +54,7 @@ $('#new_message').on('submit', function(e){
     contentType: false
   })
     .done(function(data){
+      console.log(data)
       var html = buildHTML(data);
       $('.messages').append(html);
       $('form')[0].reset();
@@ -66,7 +67,8 @@ $('#new_message').on('submit', function(e){
   })
 
   var reloadMessages = function() {
-    var last_message_id = $('.message:last').data("message-id");
+    var last_message_id = $('.message-box:last').data("message-id");
+    console.log(last_message_id)
     $.ajax({
       url: "api/messages",
       type: 'get',
@@ -74,6 +76,7 @@ $('#new_message').on('submit', function(e){
       data: {id: last_message_id}
     })
     .done(function(messages) {
+      console.log(messages)
       if (messages.length !== 0) {
       var insertHTML = '';
       $.each(messages, function(i, message) {
