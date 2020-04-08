@@ -51,13 +51,15 @@
     .group {
       height: 45px;
       margin-bottom: 40px;
-      a{color: #ffffff;
-      }
-      &__group-name {
-        font-size: 15px;
-      }
-      &__latest-message {
-        font-size: 11px;
+      a{
+        color: #ffffff;
+        text-decoration: none;
+          .group__group-name {
+          font-size: 15px;
+        }
+        .group__message {
+          font-size: 11px;
+        }
       }
     }
   }
